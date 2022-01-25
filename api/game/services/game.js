@@ -25,8 +25,6 @@ async function getByName(name, entityName) {
 }
 
 async function create(name, entityName) {
-  console.log("create ", { name, entityName });
-
   const item = await getByName(name, entityName);
 
   if (!item) {
